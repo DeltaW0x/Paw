@@ -27,12 +27,8 @@ namespace PawCore {
     public:
         Context(RendererConfig *rConfig,WindowConfig *wConfig,const bool debug);
 
-        SDL_Window* GetMainWindow() const{
-            return m_pWindows[0];
-        }
-
     private:
         Renderer* m_pRenderer;
-        SDL_Window* m_pWindows[8];
+        SDL_Window* m_pWindows;
     };
 }

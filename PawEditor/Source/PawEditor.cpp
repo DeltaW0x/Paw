@@ -7,8 +7,8 @@ int main(void) {
 
     PawCore::RendererConfig rendererConfig;
     rendererConfig.backend = SDL_GPU_BACKEND_ALL;
-    rendererConfig.presentMode = SDL_GPU_PRESENTMODE_VSYNC;
-    rendererConfig.swapchainComposition = SDL_GPU_SWAPCHAINCOMPOSITION_SDR;
+    rendererConfig.presentMode = SDL_GPU_PRESENTMODE_MAILBOX;
+    rendererConfig.swapchainComposition = SDL_GPU_SWAPCHAINCOMPOSITION_HDR10_ST2048;
     rendererConfig.renderScale = 1;
 
     PawCore::WindowConfig windowConfig;

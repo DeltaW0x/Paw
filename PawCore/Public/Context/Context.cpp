@@ -44,9 +44,9 @@ namespace PawCore {
 
         ASSERT(SDL_Init(SDL_INIT_VIDEO) == 0, "failed to init SDL: {0}", SDL_GetError());
 
-        m_pWindows[0] = SDL_CreateWindow(wConfig->windowTitle, wConfig->windowWidth, wConfig->windowHeight,wConfig->windowFlags);
-        ASSERT(m_pWindows[0] != NULL, "Failed to create Window: {0}", SDL_GetError());
+        m_pWindows = SDL_CreateWindow(wConfig->windowTitle, wConfig->windowWidth, wConfig->windowHeight,wConfig->windowFlags);
+        ASSERT(m_pWindows != NULL, "Failed to create Window: {0}", SDL_GetError());
 
-        m_pRenderer = new Renderer(rConfig,m_pWindows[0],debug);
+        m_pRenderer = new Renderer(rConfig,m_pWindows,debug);
     }
 }

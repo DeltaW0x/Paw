@@ -23,26 +23,17 @@
 #include <Config/RendererConfig.hpp>
 
 namespace PawCore {
+
     class Renderer {
 
     public:
         explicit Renderer(RendererConfig* config, SDL_Window* pWindow,const bool debug);
         void Present();
     private:
-        void SetupMainRT(SDL_GpuSampleCount msaa);
+        SDL_GpuPresentMode CheckPresentMode(SDL_GpuPresentMode mode);
+        SDL_GpuSwapchainComposition CheckSwapchainComposition(SDL_GpuSwapchainComposition composition);
     private:
-
         SDL_GpuDevice* m_pGpuDevice;
         SDL_Window* m_pWindow;
-
-        u32 m_currentRenderScale;
-        u32 m_swapchainWidth,m_swapchainHeight;
-        u32 m_prevSwapchainWidth,m_prevSwapchainHeight;
-        u32 m_renderWidth,m_renderHeight;
-
-        SDL_GpuTexture* m_pMainRT;
-
-        std::vector<float> m_uberVertexBuffer;
-        std::vector<u32> m_uberIndexBuffer;
     };
 }

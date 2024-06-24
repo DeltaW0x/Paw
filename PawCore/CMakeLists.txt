@@ -29,7 +29,6 @@ CPMAddPackage(
 add_library(
         ${PROJECT_NAME}
         Public/PawCore.hpp
-        Public/ExportAPI.hpp
         Public/Renderer/Renderer.hpp
         Public/Renderer/Renderer.cpp
         Public/Types.hpp

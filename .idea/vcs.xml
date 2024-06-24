@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="VcsDirectoryMappings">
-    <mapping directory="$PROJECT_DIR$/Cache/flecs/2bcb74b1e704b1cdb22382af19475277952b34ff" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/Cache/jolt/08cff35297f547e4448b643411099c95050a4836" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/Cache/sdl/0e4f40540f57e01a706934f30c0a0ac1ce6663af" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/Cache/spdlog/b404a25e080f7c82d91eb4ed0c543e931629f831" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/Cache/spdlog/c05af5272fe6878f61e75fb94ab1eae10b6a2749" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
   </component>
 </project>

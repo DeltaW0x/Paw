@@ -16,7 +16,6 @@
 // 3. This notice may not be removed or altered from any source distribution.
 
 #pragma once
-#include <ExportAPI.hpp>
 #include <Logging.hpp>
 #include <Renderer/Renderer.hpp>
 #include <Config/RendererConfig.hpp>
