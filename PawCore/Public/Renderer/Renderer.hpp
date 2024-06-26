@@ -22,7 +22,7 @@
 #include <vector>
 #include <Config/RendererConfig.hpp>
 
-namespace PawCore {
+namespace pawcore {
 
     class Renderer {
 

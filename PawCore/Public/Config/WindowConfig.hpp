@@ -18,7 +18,7 @@
 
 #pragma once
 #include <Logging.hpp>
-namespace PawCore {
+namespace pawcore {
     struct WindowConfig {
         u32 windowWidth;
         u32 windowHeight;

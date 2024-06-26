@@ -19,3 +19,6 @@
 #include <Logging.hpp>
 #include <Renderer/Renderer.hpp>
 #include <Config/RendererConfig.hpp>
+#include <Config/WindowConfig.hpp>
+#include <Context/Context.hpp>
+#include <vectormath.hpp>

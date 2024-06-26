@@ -26,6 +26,12 @@ CPMAddPackage(
         GIT_TAG v1.x
 )
 
+CPMAddPackage(
+        NAME vectormath
+        GITHUB_REPOSITORY glampert/vectormath
+        GIT_TAG master
+)
+
 add_library(
         ${PROJECT_NAME}
         Public/PawCore.hpp
@@ -42,4 +48,5 @@ add_library(
 target_link_libraries(${PROJECT_NAME} SDL3::SDL3-static flecs_static)
 
 target_include_directories(${PROJECT_NAME} PUBLIC ${spdlog_SOURCE_DIR}/include)
+target_include_directories(${PROJECT_NAME} PUBLIC ${vectormath_SOURCE_DIR})
 target_include_directories(${PROJECT_NAME} PUBLIC Public PRIVATE Private)

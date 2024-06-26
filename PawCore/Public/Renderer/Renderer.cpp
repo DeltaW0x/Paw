@@ -19,7 +19,7 @@
 #include <Renderer/Renderer.hpp>
 #include <Logging.hpp>
 
-namespace PawCore {
+namespace pawcore {
     Renderer::Renderer(RendererConfig *config, SDL_Window *window, const bool debug) : m_pWindow(window) {
         m_pGpuDevice = SDL_GpuCreateDevice(config->backend, debug);
 

@@ -38,7 +38,7 @@ static void SDL_LoggerBridge(void *userdata, int category, SDL_LogPriority prior
     }
 }
 
-namespace PawCore {
+namespace pawcore {
     Context::Context(RendererConfig *rConfig,WindowConfig *wConfig,const bool debug) {
         SDL_SetLogOutputFunction(&SDL_LoggerBridge,NULL);
 

@@ -22,7 +22,7 @@
 #include <Config/RendererConfig.hpp>
 #include <Config/WindowConfig.hpp>
 
-namespace PawCore {
+namespace pawcore {
     class Context {
     public:
         Context(RendererConfig *rConfig,WindowConfig *wConfig,const bool debug);

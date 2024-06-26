@@ -18,7 +18,7 @@
 #pragma once
 #include <SDL3/SDL_gpu.h>
 
-namespace PawCore {
+namespace pawcore {
     struct RendererConfig {
         SDL_GpuBackend backend;
         SDL_GpuSwapchainComposition swapchainComposition;
